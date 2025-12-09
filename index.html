@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="hi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>भगवती स्वास्थ्य सेवा सदन</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("0V5c39PDEk-vJfx7Y"); // Public key
+    })();
+  </script>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 🔴 Top emergency bar -->
+  <div class="top-bar">
+    📞 आपातकालीन (24x7): <strong>9931543921</strong> &nbsp;|&nbsp; OPD Helpline: <strong>9534803985</strong>
+  </div>
+
+  <!-- 🔴 Header -->
+  <header class="main-header">
+    <div class="logo-area">
+      <img src="signboard.jpg" alt="Bhagwati Hospital Logo">
+      <div class="logo-text">
+        <h1>भगवती स्वास्थ्य सेवा सदन</h1>
+        <p>कोर्ट चौक, जनता कॉलेज से उत्तर, झंझारपुर</p>
+      </div>
+    </div>
+
+    <!-- 🔴 Navigation -->
+    <nav class="navbar">
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#founder">Founder Desk</a></li>
+        <li><a href="#operator">Operator Desk</a></li>
+        <li><a href="#doctors">Consultants</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#news">News / Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Mobile hamburger -->
+      <div id="hamburger" class="hamburger">☰</div>
+    </nav>
+
+    <!-- 🔴 Header buttons -->
+    <div class="header-buttons">
+      <a href="tel:9931543921" class="btn emergency">🚑 Call Emergency</a>
+      <a href="#book" class="btn appointment-btn">✨ Book Appointment</a>
+    </div>
+  </header>
+
+  <!-- 🔴 Hero Slider -->
+  <section id="home" class="hero">
+    <div class="slider" id="heroSlider">
+      <div class="slide"><img src="hospital1.png" alt="Hospital 1"></div>
+      <div class="slide"><img src="hospital2.jpg" alt="Hospital 2"></div>
+      <div class="slide"><img src="hospital3.jpg" alt="Hospital 3"></div>
+    </div>
+
+    <div class="hero-overlay">
+      <h2>भगवती स्वास्थ्य सेवा सदन</h2>
+      <p class="lead">24x7 इमरजेंसी • शिशु रोग विशेषज्ञ • सामान्य शल्य चिकित्सा</p>
+      <div class="hero-buttons">
+        <a href="#doctors" class="btn">Find a Doctor</a>
+        <a href="#services" class="btn">Our Services</a>
+        <a href="tel:+919931543921" class="btn emergency-cta">Call Emergency</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>भगवती स्वास्थ्य सेवा सदन</h2>
+      <p class="lead">
+        झंझारपुर का एक भरोसेमंद सामुदायिक अस्पताल। हमारा लक्ष्य है — दयालु, गुणवत्तापूर्ण और आधुनिक चिकित्सा सेवा।
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card"><h3>Mission</h3><p>स्थानीय समुदाय को सुलभ स्वास्थ्य सेवा।</p></div>
+        <div class="about-card"><h3>Vision</h3><p>समर्पित और भरोसेमंद हेल्थकेयर सेंटर।</p></div>
+        <div class="about-card"><h3>Values</h3><p>सुरक्षा, करुणा, पारदर्शिता।</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Founder -->
+  <section id="founder" class="section alt-bg">
+    <div class="container">
+      <h2>From the Desk of the Founder</h2>
+      <div class="person-row">
+        <div class="person-photo"><img src="founder.jpg" alt="Founder"></div>
+        <div class="person-text">
+          <h3>संस्थापक (नाम भरें)</h3>
+          <blockquote>हमारा आदर्श है — हर मरीज को स्नेह और सम्मान के साथ गुणवत्तापूर्ण चिकित्सा देना।</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Operator -->
+  <section id="operator" class="section">
+    <div class="container">
+      <h2>From the Desk of the Operator</h2>
+      <div class="person-row">
+        <div class="person-photo"><img src="operator.jpg" alt="Operator"></div>
+        <div class="person-text">
+          <h3>ऑपरेटर / प्रशासक (नाम भरें)</h3>
+          <blockquote>अस्पताल की सुचारु सेवा और रोगी सहायता हमारी प्राथमिकता है।</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Doctors -->
+  <section id="doctors" class="section alt-bg">
+    <div class="container">
+      <h2>हमारे विशेषज्ञ चिकित्सक</h2>
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <img src="dr_surjit.jpg" alt="डाॅ. प्रमोद कुमार">
+          <h3>डाॅ. प्रमोद कुमार</h3>
+          <p>एम.बी.बी.एस., डी.सी.एच. (पी.एम.सी.एच.)</p>
+        </div>
+        <div class="doctor-card">
+          <img src="dr_surjit.jpg" alt="डाॅ. सुरजीत कुमार">
+          <h3>डाॅ. सुरजीत कुमार</h3>
+          <p>एम.बी.बी.एस., एम.एस. (जनरल सर्जरी)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">👶 Pediatrics</div>
+        <div class="service-card">🩺 General Surgery</div>
+        <div class="service-card">🚑 Emergency 24x7</div>
+        <div class="service-card">🔬 Labs</div>
+        <div class="service-card">🏥 Inpatient Care</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Gallery -->
+  <section id="gallery" class="section alt-bg">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="hospital1.jpg" alt="Hospital 1">
+        <img src="hospital2.jpg" alt="Hospital 2">
+        <img src="hospital3.jpg" alt="Hospital 3">
+        <img src="ward.jpg" alt="Ward">
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details><summary>क्या इमरजेंसी सेवा 24x7 उपलब्ध है?</summary><p>हाँ ✅</p></details>
+      <details><summary>कैसे अपॉइंटमेंट बुक करें?</summary><p>बुक बटन पर क्लिक करें या कॉल करें।</p></details>
+    </div>
+  </section>
+
+  <!-- 🔴 Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p>📞 <strong>9931543921</strong> | 9534803985</p>
+          <p>📍 कोर्ट चौक, जनता कॉलेज से उत्तर, झंझारपुर</p>
+          <a href="tel:+919931543921" class="btn">Call Now</a>
+          <a href="#book" class="btn appointment-btn">✨ Book Appointment</a>
+        </div>
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps?q=Court+Chowk+Janata+College+Jhajharpur&output=embed"
+            width="100%" height="320" style="border:0;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 Appointment Form -->
+  <section id="book" class="section alt-bg">
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <form id="appointmentForm" class="appointment-form">
+        <div class="form-row">
+          <input name="firstName" placeholder="First name" required>
+          <input name="lastName" placeholder="Last name" required>
+        </div>
+        <div class="form-row">
+          <select name="gender" required>
+            <option value="">Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <input name="phone" type="tel" placeholder="Phone" required>
+        </div>
+        <div class="form-row">
+          <input name="email" type="email" placeholder="Email">
+          <input name="district" placeholder="District">
+        </div>
+        <div class="form-row">
+          <textarea name="address" rows="2" placeholder="Full address"></textarea>
+        </div>
+        <div class="form-row">
+          <label>Appointment date</label>
+          <input name="date" type="date" required>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn appointment-btn">✨ Send Request</button>
+          <button type="reset" class="btn" style="background:#6b7280">Clear</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔴 Floating call -->
+  <a href="tel:+919931543921" class="floating-call">🚑 Emergency</a>
+
+  <!-- 🔴 Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>भगवती स्वास्थ्य सेवा सदन</strong><p>कोर्ट चौक, जनता कॉलेज से उत्तर</p></div>
+      <div><p>📞 9931543921 | 9534803985</p><p>© <span id="year"></span> All rights reserved</p></div>
+    </div>
+  </footer>
+
+</body>
+</html>
